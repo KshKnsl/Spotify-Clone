@@ -1,0 +1,287 @@
+*
+{
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    overflow: hidden;
+    background-color: black;
+    color: #faebd7;
+    margin: 0px;
+    padding: 5px;
+    font-weight: 700;
+}
+.main-grid
+{
+    display: grid;
+    grid-template-areas:
+      "left rightArea"
+      "Player Player";
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.border
+{
+    border-radius: 7.5px;
+}
+.left
+{
+    grid-area: left;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    width: 450px;
+    gap: 5px;
+    height: calc(98vh - 10vh);
+}
+.rightArea
+{
+    background: linear-gradient(to bottom,  #156852 0%,#121212 60%);
+    width: calc(100vw - 465px);
+    grid-area: rightArea;
+    height: calc(98vh - 10vh - 10px);
+}
+.top-left
+{
+    height: 20vh;
+    background-color: #121212;
+}
+.bottom-left
+{
+    height: calc(77vh - 10vh - 7px);
+    background-color: #121212;
+}
+.homeArea
+{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo
+{
+    padding: 0.9rem;
+    padding-left: 2rem;
+    gap: 10px;
+    justify-content: flex-start;
+    font-family: Signika;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.home-search:hover{
+    color: whitesmoke;
+}
+.underline:hover
+{
+    text-decoration: underline;
+}
+.home-search
+{
+    padding-left: 40px;
+    margin-bottom: 0.2rem;
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+.Player
+{
+    position: sticky;
+    width: 99.5vw;
+    grid-area: Player;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PLAYLIST
+{
+    padding: 3px;
+    font-size: 20px;
+    color: #9C9C9C;
+}
+.kdfj:hover
+{
+ .PLAYLIST
+ {
+    color: white;
+ } 
+}
+.playprod-btn
+{
+    padding-left: 15px;
+}
+.prod-btn:hover{ opacity: 1; }
+.prod-btn
+{
+    border: none;
+    opacity: 0.8;
+    margin: 2px;
+    background-color: #2A2A2A ;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.Music-Info
+{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Music-Info img
+{
+    border-radius: 5px;
+    width: 3.5rem;
+}
+.name-artist
+{
+    padding-left: 10px;
+}
+.Player-Controls
+{
+    justify-content: center;
+    font-weight: 100;
+    flex-direction: column;
+}
+.daba
+{
+    font-size: 1.7rem ;
+    display: flex;
+    gap: 20px;
+}
+.line
+{
+    height: 5px;
+    width: 500px;
+    background-color: white;
+    margin: 10px 20px;
+}
+.song-duration
+{
+    font-size: 0.75rem;
+}
+.liked
+{
+    padding-left: 20px;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+.liked:hover
+{
+    opacity: 1;
+}
+.user-control
+{
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem ;
+    font-weight: 100;
+    padding: 20px 10px;
+}
+.hovers2
+{
+    opacity: 0.9;
+}
+.hovers2:hover
+{
+    opacity: 1;
+}
+.hovers
+{
+    opacity: 0.5;
+}
+.hovers:hover
+{
+    opacity: 1;
+}
+.slider 
+{
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    outline: none;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 2.5px;
+}
+.slider:hover
+{
+    background: #1ED760; /* Green background */
+}
+.slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background: #00ffa2;
+    cursor: pointer;
+}
+.spacebetween
+{
+    justify-content: space-between;
+}
+.nav-bar
+{
+    padding: 20px 10px;
+}
+.bacfow button
+{
+    border: none;
+    color: white;
+    background-color: #000000;
+    opacity: 0.5;
+    margin-left: 10px;
+    font-size: 2rem;
+    padding: 0px;
+    cursor: not-allowed;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.sc{transition: transform 0.1s ease-in-out; }
+.sc:hover{transform: scale(1.05);}
+.noti-btn
+{
+    border: none;
+    color: white;
+    background-color: #00000083;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.Explore-btn
+{
+    border: none;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.install-btn
+{
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: #00000099;
+    color: white;
+    font-weight: 700;
+}
