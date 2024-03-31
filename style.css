@@ -12,6 +12,8 @@ body
     margin: 0px;
     padding: 5px;
     font-weight: 700;
+    width: 100%;
+    height: 100%;
 }
 .main-grid
 {
@@ -99,6 +101,7 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1000;
 }
 .PLAYLIST
 {
@@ -290,8 +293,8 @@ body
     padding: 16px 8px;
     flex-wrap: wrap;
     justify-content: start;
-    /* overflow: scroll;
-    height: 500px; */
+    height: 100px;
+    overflow: hidden;
 }
 .recommendationTile:hover
 {
@@ -325,7 +328,7 @@ body
 { 
     opacity: 0;
     width: 20px;
-    background-color: #00ffa2;
+    background-color: #1FDF64;
     border-radius: 50%;
     padding: 10px;
     position:absolute;
@@ -335,4 +338,87 @@ body
 .recommendationTile:hover
 {
     .ijgr svg{opacity: 1;}
+}
+.alertBox {
+  transform: translate(-2rem, 0.5rem);
+  border-radius: 0.5rem;
+  background-color: #282828;
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  z-index: 3;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+.alertBox-2 {
+  transform: translate(-3rem, 0.5rem);
+  border-radius: 0.5rem;
+  background-color: #282828;
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  z-index: 3;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+.ico:hover {
+  transform: scale(1.07);
+  opacity: 1;
+}
+.ico:hover .alertBox , .ico:hover .alertBox-2{
+  visibility: visible;
+  opacity: 1;
+}
+.cardArea
+{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    overflow: scroll;
+    flex-wrap: wrap;
+    height: calc(98vh - 10vh - 365px);
+    overflow-x: hidden;
+}
+.card:hover
+{background-color: #191919;}
+.card
+{
+    border-radius: 10px;
+    padding: 8px;
+    margin: 5px;
+    min-width: 160px;
+    max-width: 200px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.card img
+{
+    align-self: center;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3
+{
+    margin: 2px;
+}
+.card h6
+{
+    opacity: 0.5;
+    font-weight: 400;
+    overflow: hidden;
+}
+.card svg
+{ 
+    position: relative;
+    background-color: #1FDF64;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
 }
